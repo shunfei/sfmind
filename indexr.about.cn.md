@@ -1,6 +1,7 @@
 IndexR，一个千亿级别的实时分析数据库
 ===
 
+![icon](indexr.about.res/indexr_icon.png)
 
 ## 背景
 
