@@ -32,7 +32,7 @@ IndexR is original developed by [Sunteng](http://www.sunteng.com/), a leading in
 
 ## Performance
 
-Hardware: 6 cores(24 threads) CPU, 60G RAM, HDD STATA with 7200 RPM.
+Hardware:  [Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz] x 2, 60G RAM, HDD STATA with 7200 RPM.
 
 * **Realtime ingestion speed** - maximum over 30K events / second / node / table. e.g. 10 nodes each serving 10 realtime tables can consumes 3M events within one second. We believe this is the best score ever around all similar systems.
 * **Scan speed** - You may find much better performence in real production environment because IndexR can process multiple values at the same time with the help of modern CPU and processing platform(like Drill).
