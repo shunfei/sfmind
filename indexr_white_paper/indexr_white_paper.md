@@ -1,4 +1,4 @@
-IndexR：实时、可扩展、基于Hadoop的数据仓库
+IndexR：实时、基于Hadoop的数据仓库
 ====
 
 ## 摘要
