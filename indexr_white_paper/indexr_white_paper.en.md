@@ -198,7 +198,7 @@ after open sourcing IndexR, we have seen a lot of use cases, including the diffe
 
 # # Contact Us
 
-![IndexR_icon](IndexR_icon.png)
+![IndexR_icon](indexr_icon.png)
 
 * Contact Email: IndexRdb@gmail. com
 * QQ Discussion groups: 606666586 (IndexR discussion group)
