@@ -51,7 +51,7 @@ Column name | Data type|
 
 The data file is called segment, and a segment saves a portion of a table, containing all the columns, as shown below.
 
-! [Segment_file] (segment_file.png)
+![Segment_file](segment_file.png)
 
 The segment file is self explanatory and contains version information, full table definitions, metadata for each part (offset), and indexing. In IndexR all columns are indexed by default. The row order can be the natural order of the storage, or it can be sorted by user-defined fields. Such a design simplifies the system architecture, does not require additional metadata storage, is very suitable for parallel processing in a distributed environment, and also facilitates external systems such as Hive's direct use.
 
@@ -106,17 +106,17 @@ IndexR supports real-time data additions, but does not support online updates, a
 
 IndexR's real-time storage module uses a similar lsm-tree structure. Using the Commitlog file to save the message, the latest data is stored in memory and is written to the hard disk after a certain threshold is reached.
 
-! [Realtime_segment] (realtime_segment.png)
+![Realtime_segment](realtime_segment.png)
 
 In-memory data is periodically stored on the hard disk, and with time will produce more fragmented files, which will be sorted and merged after reaching a certain threshold.
 
-! [Realtime_process] (realtime_process.png)
+![Realtime_process](realtime_process.png)
 
 Rows can be stored in a natural storage order, or they can be sorted by a specified field, similar to the one-level index in a relational database and column Family in HBase, which makes the data more cohesive and advantageous for queries.
 
 Similar to Mesa, if required, IndexR real-time storage can be divided into dimensions (Dimension) and indicators (Metric/measure) based on the concept of Multidimensional Analysis (multidimensional), Rows with the same dimensions are merged together, and the metric uses aggregate functions (aggregation function, E.G. SUM, COUNT), and the table can be designed to be a parent-child relationship of original table.
 
-! [Table_olap] (Table_olap.png)
+![Table_olap](Table_olap.png)
 
 As shown in figure, table B and table C can be considered a child of table A. Table A has three dimensions (date, country, campaign_id) that can express the most detailed information. Table B and table C reduce the amount of data by reducing the dimension, and can get the results of the query more quickly.
 
@@ -136,7 +136,7 @@ This design is similar to the pre-aggregation view in a relational database. In 
 
 IndexR architecture design follows simple, reliable and extensible principles. It enables large-scale cluster deployments and supports thousands of nodes. In fact, IndexR hardware costs are relatively low and can be extended linearly by adding nodes.
 
-! [Ecosystem] (ecosystem.png)
+![Ecosystem](ecosystem.png)
 
 Apache Drill is IndexR's query layer. Drill is a new query engine focused on SQL computing, using techniques such as code generation, vector processing, column computing, and heap memory (eliminating GC), specifically for the optimization of large datasets. Very fast, and support standard SQL, no migration burden. From our experience of use, it is very stable, engineering quality is very high.
 
@@ -148,7 +148,7 @@ Data is imported into IndexR by Kafka and other queues. IndexR Real-time import 
 
 There is only one node in the IndexR cluster (IndexR nodes), which facilitates deployment and maintenance and does not require partitioning of nodes. Currently IndexR is embedded as a drill plugin in the drillbit process.
 
-! [Deploy_architecture] (deploy_architecture.png)
+![Deploy_architecture](deploy_architecture.png)
 
 IndexR provides a IndexR-tool tool that provides a complete operational management tool. For example, can update the table structure online, online add, modify the real-time storage configuration.
 
@@ -198,7 +198,7 @@ after open sourcing IndexR, we have seen a lot of use cases, including the diffe
 
 # # Contact Us
 
-! [IndexR_icon] (IndexR_icon.png)
+![IndexR_icon](IndexR_icon.png)
 
 * Contact Email: IndexRdb@gmail. com
 * QQ Discussion groups: 606666586 (IndexR discussion group)
