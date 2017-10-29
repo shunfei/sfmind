@@ -153,7 +153,7 @@ There is only one node in the IndexR cluster (IndexR nodes), which facilitates d
 IndexR provides a IndexR-tool tool that provides a complete operational management tool. For example, can update the table structure online, online add, modify the real-time storage configuration.
 
 
-## Project Implementation challenges
+## Project Implementation Challenges
 
 The algorithm and data structure should be really grounded, and it must be realized through concrete projects, and the quality of project execution determines the final effect of the project. Tall buildings are not built if they have a superb design drawing and no high-quality construction and suitable materials. IndexR works on the most extreme performance, but without losing the flexibility of scalability.
 
@@ -186,7 +186,7 @@ Typical selection:
 
 The Cleanse Data platform group has a wealth of experience with most of the technical choices mentioned above, that is, the tools we have used in the build environment, or have had in-depth research and testing, this has prompted the birth of IndexR.
 
-## thinking and summarizing
+## Thinking and Summarizing
 
 Large data after recent years of rapid development, complete ecological gradually mature, has long been from the era of Hadoop running MR Jobs. After satisfying the need to analyze a large number of data sets, people gradually put forward higher requirements for timeliness and ease of use, so new tools such as Storm and Spark were born. New challenges are emerging and new opportunities are offered. and traditional Data Warehouse products, in the face of large data impact appears very powerless. IndexR provides a new way to solve this situation.
 
@@ -194,11 +194,11 @@ IndexR is a new generation of data Warehouse system, designed for OLAP scenarios
 
 We do not need to worry about ability analyze the bottleneck of complex bigdata systems, do not give up the classic OLAP theory, do not downgrade your service, do not worry about the business staff to unfamiliar large data tools. IndexR like MySQL, will be good for SQL.
 
-after open sourcing IndexR, we have seen a lot of use cases, including the different teams at home and abroad. Interestingly, some teams are used in a special way, for example, to store a large number of complex detail data (single table design), or to do a detailed query of historical data. IndexR not only can be used in multidimensional analysis, business intelligence, such as the classic areas of OLAP, but also for Internet, public opinion monitoring, crowd behavior analysis and other emerging directions.
+After open sourcing IndexR, we have seen a lot of use cases, including the different teams at home and abroad. Interestingly, some teams are used in a special way, for example, to store a large number of complex detail data (single table design), or to do a detailed query of historical data. IndexR not only can be used in multidimensional analysis, business intelligence, such as the classic areas of OLAP, but also for Internet, public opinion monitoring, crowd behavior analysis and other emerging directions.
 
-# # Contact Us
+## Contact Us
 
-![IndexR_icon](indexr_icon.png)
+![indexr_icon](indexr_icon.png)
 
-* Contact Email: IndexRdb@gmail. com
+* Contact Email: flowbehappy@gmail.com
 * QQ Discussion groups: 606666586 (IndexR discussion group)
